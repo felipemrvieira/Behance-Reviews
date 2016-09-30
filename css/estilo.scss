@@ -1,0 +1,124 @@
+@font-face {
+    font-family: 'Helvetica';
+    src: url('fonts/HelveticaNeueBold.ttf') format('truetype');
+}
+
+$cor-texto: #ffed00;
+$padding-lateral: 150px;
+
+.container-fluid{
+    padding: 0;
+}
+
+.pad{
+    padding-left: $padding-lateral;
+    padding-right: $padding-lateral;
+}
+
+#sec-1 {
+background: #b71d29;
+background: -moz-linear-gradient(45deg,  #b71d29 2%, #342172 79%, #342172 79%, #342172 100%);
+background: -webkit-linear-gradient(45deg,  #b71d29 2%,#342172 79%,#342172 79%,#342172 100%);
+background: linear-gradient(45deg,  #b71d29 2%,#342172 79%,#342172 79%,#342172 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b71d29', endColorstr='#342172',GradientType=1 );
+
+font-family: 'Helvetica';
+color: $cor-texto;
+
+    #behance-svg1{
+        fill: currentColor;
+        height: 50px;
+        width: 180px;
+    }
+    #left{
+        padding-top: 35px;
+        
+        .traco{
+            font-family: arial;
+            font-size: 80px;
+            line-height: 50px;
+        }
+        
+        #maceio{
+            font-size: 48px;
+        }
+        
+        #quem-pode{
+            font-size: 23px;
+        }
+        
+        .portfolio{
+            line-height: 90px;
+            font-size: 75px;
+        }
+        
+        .btn-success{
+            background-color: #8ab71c;
+            border-color: #8ab71c;
+            font-size: 40px;
+            padding: 20px 18px;
+            border-radius: 12px;
+            margin: 20px 0 20px 0;
+        }
+    }
+    
+    #marca{
+        width: 100%
+    }
+    
+    #rodape-1{
+    padding-bottom: 25px;
+    
+        .f-left{
+            float: left;
+            color: white;
+        }
+        .f-right{
+            float: right;
+            color: white;
+
+            #behance-svg2{
+                fill: currentColor;
+                height: 14px;
+                --width: 180px;
+            }
+        }
+    }  
+}
+
+#sec-2{
+    background:url(../img/Behance2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 30px;
+    
+    font-family: 'Helvetica';
+    color: $cor-texto;
+    
+    #header-sec-2{
+        padding-top: 90px;
+        font-size: 50px;
+        line-height: 47px;
+    }
+    
+    #contudo-sec-2{
+        padding-top: 90px;
+        
+        
+        .pad-contudo-sec-2{
+            padding-right: 40px;
+        }
+        
+        .titulo-contudo-sec-2{
+            font-size: 36px;
+            line-height: 40px;
+            padding-bottom: 20px;
+        }
+        
+        .texto-contudo-sec-2{
+            font-size: 32px;
+            line-height: 35px;
+            color: white;
+        }
+    }
+}
