@@ -79,4 +79,16 @@
       line-height: 35px;
       color: white; }
 
+#sec-3 {
+  background-color: black;
+  padding-top: 50px;
+  padding-bottom: 50px; }
+
+#sec-4 {
+  background-color: blueviolet; }
+  #sec-4 img {
+    width: 120%; }
+  #sec-4 .branco {
+    color: white; }
+
 /*# sourceMappingURL=estilo.css.map */
