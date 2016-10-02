@@ -2,11 +2,27 @@
   font-family: 'Helvetica';
   src: url("fonts/HelveticaNeueBold.ttf") format("truetype"); }
 .container-fluid {
-  padding: 0; }
+  padding: 0;
+  margin: 0; }
 
 .pad {
   padding-left: 150px;
   padding-right: 150px; }
+
+.branco {
+  color: #ffffff; }
+
+.linha {
+  background-color: #000000;
+  height: 7px;
+  padding: 0;
+  margin: 0; }
+
+.linha-rosa {
+  background-color: #c21c5e;
+  height: 1px;
+  padding: 0;
+  margin: 0; }
 
 #sec-1 {
   background: #b71d29;
@@ -85,10 +101,44 @@
   padding-bottom: 50px; }
 
 #sec-4 {
-  background-color: blueviolet; }
+  background: #0a0615;
+  background: -moz-linear-gradient(45deg, #0a0615 0%, #220508 100%);
+  background: -webkit-linear-gradient(45deg, #0a0615 0%, #220508 100%);
+  background: linear-gradient(45deg, #0a0615 0%, #220508 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0a0615', endColorstr='#220508',GradientType=1 ); }
   #sec-4 img {
-    width: 120%; }
-  #sec-4 .branco {
-    color: white; }
+    width: 110%; }
+
+#sec-5 {
+  background: #4b0c11;
+  background: -moz-linear-gradient(45deg, #4b0c11 0%, #470c15 22%, #150e2f 100%);
+  background: -webkit-linear-gradient(45deg, #4b0c11 0%, #470c15 22%, #150e2f 100%);
+  background: linear-gradient(45deg, #4b0c11 0%, #470c15 22%, #150e2f 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4b0c11', endColorstr='#150e2f',GradientType=1 ); }
+  #sec-5 img {
+    width: 110%; }
+
+#sec-6 {
+  background-color: #ffffff;
+  margin: 0;
+  padding: 0; }
+  #sec-6 .row {
+    margin: 0;
+    padding: 0; }
+    #sec-6 .row img {
+      width: 110%;
+      padding: 10px; }
+
+#sec-7 {
+  background: #382171;
+  background: -moz-linear-gradient(45deg, #382171 0%, #b51d2a 86%, #b51d2a 100%);
+  background: -webkit-linear-gradient(45deg, #382171 0%, #b51d2a 86%, #b51d2a 100%);
+  background: linear-gradient(45deg, #382171 0%, #b51d2a 86%, #b51d2a 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#382171', endColorstr='#b51d2a',GradientType=1 );
+  color: #ebbb01; }
+
+#sec-8 #map {
+  width: 100%;
+  height: 300px; }
 
 /*# sourceMappingURL=estilo.css.map */

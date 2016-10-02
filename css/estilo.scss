@@ -4,15 +4,40 @@
 }
 
 $cor-texto: #ffed00;
+$amarelo-escuro: #ebbb01;
 $padding-lateral: 150px;
+$branco: #ffffff;
+$preto: #000000;
+$rosa: #c21c5e;
 
 .container-fluid{
     padding: 0;
+    margin: 0;
 }
+
+
 
 .pad{
     padding-left: $padding-lateral;
     padding-right: $padding-lateral;
+}
+
+.branco{
+    color: $branco;
+}
+
+.linha{
+    background-color: $preto;
+    height: 7px;
+    padding: 0;
+    margin: 0;
+}
+
+.linha-rosa{
+    background-color: $rosa;
+    height: 1px;
+    padding: 0;
+    margin: 0;
 }
 
 #sec-1 {
@@ -131,12 +156,63 @@ color: $cor-texto;
 }
 
 #sec-4{
-    background-color: blueviolet;
+    
+    background: rgb(10,6,21);
+background: -moz-linear-gradient(45deg,  rgba(10,6,21,1) 0%, rgba(34,5,8,1) 100%);
+background: -webkit-linear-gradient(45deg,  rgba(10,6,21,1) 0%,rgba(34,5,8,1) 100%);
+background: linear-gradient(45deg,  rgba(10,6,21,1) 0%,rgba(34,5,8,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0a0615', endColorstr='#220508',GradientType=1 );
+
     img{
-        width: 120%;
+        width: 110%;
+    }
+}
+
+#sec-5{
+    background: rgb(75,12,17);
+background: -moz-linear-gradient(45deg,  rgba(75,12,17,1) 0%, rgba(71,12,21,1) 22%, rgba(21,14,47,1) 100%);
+background: -webkit-linear-gradient(45deg,  rgba(75,12,17,1) 0%,rgba(71,12,21,1) 22%,rgba(21,14,47,1) 100%);
+background: linear-gradient(45deg,  rgba(75,12,17,1) 0%,rgba(71,12,21,1) 22%,rgba(21,14,47,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4b0c11', endColorstr='#150e2f',GradientType=1 );
+
+
+    img{
+        width: 110%;
+    }
+}
+
+#sec-6{
+    background-color: $branco;
+    margin: 0;
+    padding: 0;
+    
+    .row{
+        margin: 0;
+        padding: 0;
+        
+        img{
+            width: 110%;
+            padding: 10px;
+        }
     }
     
-    .branco{
-        color: white;
+    
+}
+
+#sec-7{
+   background: rgb(56,33,113);
+background: -moz-linear-gradient(45deg,  rgba(56,33,113,1) 0%, rgba(181,29,42,1) 86%, rgba(181,29,42,1) 100%);
+background: -webkit-linear-gradient(45deg,  rgba(56,33,113,1) 0%,rgba(181,29,42,1) 86%,rgba(181,29,42,1) 100%);
+background: linear-gradient(45deg,  rgba(56,33,113,1) 0%,rgba(181,29,42,1) 86%,rgba(181,29,42,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#382171', endColorstr='#b51d2a',GradientType=1 );
+    
+    color: $amarelo-escuro;
+    
+}
+
+#sec-8{
+    #map{
+        width: 100%;
+        height: 300px;
     }
 }
