@@ -1,9 +1,22 @@
 @font-face {
   font-family: 'Helvetica';
   src: url("fonts/HelveticaNeueBold.ttf") format("truetype"); }
+@font-face {
+  font-family: 'Helvetica-light';
+  src: url("fonts/HelveticaNeue-Light.otf"); }
+/*@font-face {
+    font-family: 'light';
+    src: url('fonts/HelveticaLt.ttf') format('truetype');
+}*/
 .container-fluid {
   padding: 0;
   margin: 0; }
+
+.light {
+  font-family: 'Helvetica-light'; }
+
+.bold {
+  font-family: 'Helvetica'; }
 
 .pad {
   padding-left: 150px;
@@ -38,6 +51,14 @@
     width: 180px; }
   #sec-1 #left {
     padding-top: 35px; }
+    #sec-1 #left #facebook {
+      width: 92px;
+      margin-right: 23px; }
+    #sec-1 #left #behance {
+      width: 131px; }
+    #sec-1 #left #logo-evento {
+      margin-top: 20px;
+      margin-bottom: 30px; }
     #sec-1 #left .traco {
       font-family: arial;
       font-size: 80px;
@@ -46,6 +67,8 @@
       font-size: 48px; }
     #sec-1 #left #quem-pode {
       font-size: 23px; }
+    #sec-1 #left .prof {
+      font-size: 17px; }
     #sec-1 #left .portfolio {
       line-height: 90px;
       font-size: 75px; }
@@ -125,15 +148,16 @@
   background: url(../img/Behance2.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  padding-bottom: 30px;
+  padding-bottom: 140px;
   font-family: 'Helvetica';
   color: #ffed00; }
   #sec-2 #header-sec-2 {
     padding-top: 90px;
     font-size: 50px;
-    line-height: 47px; }
+    line-height: 47px;
+    font-family: 'Helvetica-light'; }
   #sec-2 #contudo-sec-2 {
-    padding-top: 90px; }
+    padding-top: 70px; }
     #sec-2 #contudo-sec-2 .pad-contudo-sec-2 {
       padding-right: 40px; }
     #sec-2 #contudo-sec-2 .titulo-contudo-sec-2 {
@@ -141,37 +165,108 @@
       line-height: 40px;
       padding-bottom: 20px; }
     #sec-2 #contudo-sec-2 .texto-contudo-sec-2 {
-      font-size: 32px;
+      font-size: 28px;
       line-height: 35px;
       color: white; }
 
 #sec-3 {
   background-color: black;
-  padding-top: 50px;
-  padding-bottom: 50px; }
+  padding-top: 85px;
+  padding-bottom: 210px;
+  color: #ffed00; }
+  #sec-3 .titulo {
+    font-size: 48px;
+    letter-spacing: 3px;
+    padding-bottom: 81px; }
+  #sec-3 .titulo-2 {
+    font-size: 65px;
+    color: #ffffff;
+    letter-spacing: 2px;
+    line-height: 60px; }
+  #sec-3 .legenda {
+    font-size: 23px;
+    letter-spacing: 2px;
+    padding-bottom: 15px; }
+  #sec-3 .btn-success {
+    background-color: #8ab71c;
+    border-color: #8ab71c;
+    font-size: 23px;
+    padding: 18px 18px;
+    border-radius: 12px;
+    margin: 20px 0 20px 0; }
 
 #sec-4 {
   background: #0a0615;
   background: -moz-linear-gradient(45deg, #0a0615 0%, #220508 100%);
   background: -webkit-linear-gradient(45deg, #0a0615 0%, #220508 100%);
   background: linear-gradient(45deg, #0a0615 0%, #220508 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0a0615', endColorstr='#220508',GradientType=1 ); }
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0a0615', endColorstr='#220508',GradientType=1 );
+  padding-top: 132px;
+  padding-bottom: 20px; }
   #sec-4 img {
     width: 110%; }
+  #sec-4 #titulo {
+    color: #ffed00;
+    font-size: 40px;
+    letter-spacing: 2px;
+    padding-bottom: 92px; }
+  #sec-4 .card {
+    padding-bottom: 67px; }
+  #sec-4 .alinha {
+    left: -40px;
+    top: 40px; }
+  #sec-4 .sobrenome {
+    font-size: 33px;
+    line-height: 31px; }
+  #sec-4 .nome {
+    font-size: 23px; }
+  #sec-4 .profissao {
+    color: #ffed00;
+    font-size: 9px; }
+  #sec-4 .f-right {
+    float: right; }
+  #sec-4 .papel {
+    font-size: 12px;
+    line-height: 12px; }
 
 #sec-5 {
   background: #4b0c11;
   background: -moz-linear-gradient(45deg, #4b0c11 0%, #470c15 22%, #150e2f 100%);
   background: -webkit-linear-gradient(45deg, #4b0c11 0%, #470c15 22%, #150e2f 100%);
   background: linear-gradient(45deg, #4b0c11 0%, #470c15 22%, #150e2f 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4b0c11', endColorstr='#150e2f',GradientType=1 ); }
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4b0c11', endColorstr='#150e2f',GradientType=1 );
+  padding-top: 132px;
+  padding-bottom: 20px; }
   #sec-5 img {
     width: 110%; }
+  #sec-5 #titulo {
+    color: #ffed00;
+    font-size: 40px;
+    letter-spacing: 2px;
+    padding-bottom: 92px; }
+  #sec-5 .card {
+    padding-bottom: 67px; }
+  #sec-5 .alinha {
+    left: -40px;
+    top: 40px; }
+  #sec-5 .sobrenome {
+    font-size: 33px;
+    line-height: 31px; }
+  #sec-5 .nome {
+    font-size: 23px; }
+  #sec-5 .profissao {
+    color: #ffed00;
+    font-size: 9px; }
+  #sec-5 .f-right {
+    float: right; }
+  #sec-5 .papel {
+    font-size: 12px;
+    line-height: 12px; }
 
 #sec-6 {
   background-color: #ffffff;
   margin: 0;
-  padding: 0; }
+  padding: 21px 0 23px 0; }
   #sec-6 .row {
     margin: 0;
     padding: 0; }
@@ -185,7 +280,11 @@
   background: -webkit-linear-gradient(45deg, #382171 0%, #b51d2a 86%, #b51d2a 100%);
   background: linear-gradient(45deg, #382171 0%, #b51d2a 86%, #b51d2a 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#382171', endColorstr='#b51d2a',GradientType=1 );
-  color: #ebbb01; }
+  color: #ebbb01;
+  padding-top: 65px;
+  padding-bottom: 75px; }
+  #sec-7 #logo-evento img {
+    width: 72%; }
 
 #sec-8 #map {
   width: 100%;

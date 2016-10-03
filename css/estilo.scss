@@ -3,6 +3,16 @@
     src: url('fonts/HelveticaNeueBold.ttf') format('truetype');
 }
 
+@font-face {
+    font-family: 'Helvetica-light';
+    src: url('fonts/HelveticaNeue-Light.otf');
+}
+
+/*@font-face {
+    font-family: 'light';
+    src: url('fonts/HelveticaLt.ttf') format('truetype');
+}*/
+
 $cor-texto: #ffed00;
 $amarelo-escuro: #ebbb01;
 $padding-lateral: 150px;
@@ -15,7 +25,13 @@ $rosa: #c21c5e;
     margin: 0;
 }
 
+.light{
+    font-family: 'Helvetica-light';
+}
 
+.bold{
+    font-family: 'Helvetica';
+}
 
 .pad{
     padding-left: $padding-lateral;
@@ -58,6 +74,19 @@ color: $cor-texto;
     #left{
         padding-top: 35px;
         
+        #facebook{
+            width: 92px;
+            margin-right: 23px;
+        }
+        #behance{
+            width: 131px;
+        }
+        
+        #logo-evento{
+            margin-top: 20px;
+            margin-bottom: 30px;
+        }
+        
         .traco{
             font-family: arial;
             font-size: 80px;
@@ -70,6 +99,10 @@ color: $cor-texto;
         
         #quem-pode{
             font-size: 23px;
+        }
+        
+        .prof{
+            font-size: 17px;
         }
         
         .portfolio{
@@ -169,7 +202,7 @@ color: $cor-texto;
     background:url(../img/Behance2.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    padding-bottom: 30px;
+    padding-bottom: 140px;
     
     font-family: 'Helvetica';
     color: $cor-texto;
@@ -178,10 +211,12 @@ color: $cor-texto;
         padding-top: 90px;
         font-size: 50px;
         line-height: 47px;
+        
+        font-family: 'Helvetica-light';
     }
     
     #contudo-sec-2{
-        padding-top: 90px;
+        padding-top: 70px;
         
         
         .pad-contudo-sec-2{
@@ -195,7 +230,7 @@ color: $cor-texto;
         }
         
         .texto-contudo-sec-2{
-            font-size: 32px;
+            font-size: 28px;
             line-height: 35px;
             color: white;
         }
@@ -204,8 +239,38 @@ color: $cor-texto;
 
 #sec-3{
     background-color: black;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: 85px;
+    padding-bottom: 210px;
+    
+    color: $cor-texto;
+    
+    .titulo{
+        font-size: 48px;
+        letter-spacing: 3px;
+        padding-bottom: 81px;
+    }
+    
+    .titulo-2{
+        font-size: 65px;
+        color: $branco;
+        letter-spacing: 2px;
+        line-height: 60px;
+    }
+    
+    .legenda{
+        font-size: 23px;
+        letter-spacing: 2px;
+        padding-bottom: 15px;
+    }
+    
+    .btn-success{
+            background-color: #8ab71c;
+            border-color: #8ab71c;
+            font-size: 23px;
+            padding: 18px 18px;
+            border-radius: 12px;
+            margin: 20px 0 20px 0;
+        }
     
 }
 
@@ -216,9 +281,50 @@ background: -moz-linear-gradient(45deg,  rgba(10,6,21,1) 0%, rgba(34,5,8,1) 100%
 background: -webkit-linear-gradient(45deg,  rgba(10,6,21,1) 0%,rgba(34,5,8,1) 100%);
 background: linear-gradient(45deg,  rgba(10,6,21,1) 0%,rgba(34,5,8,1) 100%);
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0a0615', endColorstr='#220508',GradientType=1 );
+    
+    padding-top: 132px;
+    padding-bottom: 20px;
 
     img{
         width: 110%;
+    }
+    
+    #titulo{
+        color: $cor-texto;
+        font-size: 40px;
+        letter-spacing: 2px;
+        padding-bottom: 92px;
+    }
+    
+    .card{
+        padding-bottom: 67px;
+    }
+    
+    .alinha{
+        left: -40px;
+        top: 40px;
+    }
+    
+    .sobrenome{
+        font-size: 33px;
+        line-height: 31px;
+    }
+    .nome{
+        font-size: 23px;
+    }
+    .profissao{
+        //float: right;
+        color: $cor-texto;
+        font-size: 9px;
+    }
+    
+    .f-right{
+        float: right;
+    }
+    .papel{
+        //float: right;
+        font-size: 12px;
+        line-height: 12px;
     }
 }
 
@@ -230,15 +336,56 @@ background: linear-gradient(45deg,  rgba(75,12,17,1) 0%,rgba(71,12,21,1) 22%,rgb
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4b0c11', endColorstr='#150e2f',GradientType=1 );
 
 
+    padding-top: 132px;
+    padding-bottom: 20px;
+
     img{
         width: 110%;
+    }
+    
+    #titulo{
+        color: $cor-texto;
+        font-size: 40px;
+        letter-spacing: 2px;
+        padding-bottom: 92px;
+    }
+    
+    .card{
+        padding-bottom: 67px;
+    }
+    
+    .alinha{
+        left: -40px;
+        top: 40px;
+    }
+    
+    .sobrenome{
+        font-size: 33px;
+        line-height: 31px;
+    }
+    .nome{
+        font-size: 23px;
+    }
+    .profissao{
+        //float: right;
+        color: $cor-texto;
+        font-size: 9px;
+    }
+    
+    .f-right{
+        float: right;
+    }
+    .papel{
+        //float: right;
+        font-size: 12px;
+        line-height: 12px;
     }
 }
 
 #sec-6{
     background-color: $branco;
     margin: 0;
-    padding: 0;
+    padding: 21px 0 23px 0;
     
     .row{
         margin: 0;
@@ -261,6 +408,16 @@ background: linear-gradient(45deg,  rgba(56,33,113,1) 0%,rgba(181,29,42,1) 86%,r
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#382171', endColorstr='#b51d2a',GradientType=1 );
     
     color: $amarelo-escuro;
+    
+    padding-top: 65px;
+    padding-bottom: 75px;
+    
+    #logo-evento{
+        
+        img{
+            width: 72%;
+        }
+    }
     
 }
 
