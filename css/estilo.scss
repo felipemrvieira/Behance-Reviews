@@ -420,14 +420,18 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4b0c11', end
         img{
             width: 110%;
             padding: 10px;
+            -webkit-transform: scale(1);
+            transform: scale(1);
             
         
-            -webkit-transition: .3s ease-out;
-            transition: .3s ease-out;
+            -webkit-transition: .2s ease-in-out;
+            transition: .2s ease-in-out;
             
             &:hover{
-                width: 110%;
-            padding: 10px;
+                
+                -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+                
                 -webkit-filter: grayscale(50%);
                 filter: grayscale(50%);
                 
@@ -436,7 +440,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4b0c11', end
         }
     }
     
-    
+
 }
 
 #sec-7{

@@ -290,11 +290,13 @@
     #sec-6 .row img {
       width: 110%;
       padding: 10px;
-      -webkit-transition: .3s ease-out;
-      transition: .3s ease-out; }
+      -webkit-transform: scale(1);
+      transform: scale(1);
+      -webkit-transition: .2s ease-in-out;
+      transition: .2s ease-in-out; }
       #sec-6 .row img:hover {
-        width: 110%;
-        padding: 10px;
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
         -webkit-filter: grayscale(50%);
         filter: grayscale(50%); }
 
