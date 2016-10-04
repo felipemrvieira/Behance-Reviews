@@ -52,11 +52,11 @@
 <head>
     <meta charset="UTF-8">
     <title>Behance Reviews</title>
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     
     <link rel="stylesheet" href="css/estilo.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     
     <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -177,7 +177,7 @@
             <div id="titulo" class="row bold">// PALESTRANTES</div>
             <div class="row">
                 <div class="col-md-4 card">
-                    <div class="col-md-8"><img src="img/pa-gusmao.png" alt=""></div>
+                    <div class="col-md-8"><a data-toggle="modal" data-target="#GusmaoModal"><img src="img/pa-gusmao.png" alt=""></a></div>
                     <div class="col-md-4 branco alinha">
                         <div class="row sobrenome bold">GUSMÃO</div>
                         <div class="row nome">VICTOR</div>
@@ -201,7 +201,7 @@
                     </div>
                 </div>
                <div class="col-md-4 card">
-                    <div class="col-md-8"><img src="img/pa-brasil.png" alt=""></div>
+                   <div class="col-md-8"><a data-toggle="modal" data-target="#VictorModal"><img src="img/pa-brasil.png" alt=""></a></div>
                     <div class="col-md-4 branco alinha">
                         <div class="row sobrenome bold">VICTOR</div>
                         <div class="row nome">BRASIL</div>
@@ -213,7 +213,7 @@
                     </div>
                 </div>
                <div class="col-md-4 card">
-                    <div class="col-md-8"><img src="img/pa-meda.png" alt=""></div>
+                   <div class="col-md-8"><a data-toggle="modal" data-target="#MedaModal"><img src="img/pa-meda.png" alt=""></a></div>
                     <div class="col-md-4 branco alinha">
                         <div class="row sobrenome bold">IGOR</div>
                         <div class="row nome">MÊDA</div>
@@ -259,7 +259,7 @@
             <div id="titulo" class="row bold">// AVALIADORES</div>
             <div class="row">
                 <div class="col-md-4 card">
-                    <div class="col-md-8"><img src="img/av-rafael.png" alt=""></div>
+                    <div class="col-md-8"><a data-toggle="modal" data-target="#RafaelModal"><img src="img/av-rafael.png" alt=""></a></div>
                     <div class="col-md-4 branco alinha">
                         <div class="row sobrenome bold">RAFAEL</div>
                         <div class="row nome">QUINTELLA</div>
@@ -271,7 +271,7 @@
                     </div>
                 </div>
                <div class="col-md-4 card">
-                    <div class="col-md-8"><img src="img/av-cristiano.png" alt=""></div>
+                   <div class="col-md-8"><a data-toggle="modal" data-target="#SuarezModal"><img src="img/av-cristiano.png" alt=""></a></div>
                     <div class="col-md-4 branco alinha">
                         <div class="row sobrenome bold">CRISTIANO</div>
                         <div class="row nome">SUAREZ</div>
@@ -283,7 +283,7 @@
                     </div>
                 </div>
                <div class="col-md-4 card">
-                    <div class="col-md-8"><img src="img/av-almir.png" alt=""></div>
+                   <div class="col-md-8"> <a data-toggle="modal" data-target="#AlmirModal"><img src="img/av-almir.png" alt=""></a></div>
                     <div class="col-md-4 branco alinha">
                         <div class="row sobrenome bold">ALMIR</div>
                         <div class="row nome">LIRA</div>
@@ -296,7 +296,7 @@
                 </div>
                 <div class="row"></div>
                <div class="col-md-4 card">
-                    <div class="col-md-8"><img src="img/av-hernann.png" alt=""></div>
+                   <div class="col-md-8"><a data-toggle="modal" data-target="#HermannModal"><img src="img/av-hernann.png" alt=""></a></div>
                     <div class="col-md-4 branco alinha">
                         <div class="row sobrenome bold">HERMANN</div>
                         <div class="row nome">FERNANDES</div>
@@ -308,7 +308,7 @@
                     </div>
                 </div>
                <div class="col-md-4 card">
-                    <div class="col-md-8"><img src="img/av-paulo.png" alt=""></div>
+                   <div class="col-md-8"><a data-toggle="modal" data-target="#PauloModal"><img src="img/av-paulo.png" alt=""></a></div>
                     <div class="col-md-4 branco alinha">
                         <div class="row sobrenome bold">PAULO</div>
                         <div class="row nome">ARAUJO</div>
@@ -320,7 +320,7 @@
                     </div>
                 </div>
                <div class="col-md-4 card">
-                    <div class="col-md-8"><img src="img/av-arnaldo.png" alt=""></div>
+                   <div class="col-md-8"><a data-toggle="modal" data-target="#"><img src="img/av-arnaldo.png" alt=""></a></div>
                     <div class="col-md-4 branco alinha">
                         <div class="row sobrenome bold">ARNALDO</div>
                         <div class="row nome">MEDEIROS</div>
@@ -379,6 +379,169 @@
         <div id="sec-8">
             <div id="map"></div>
         </div>
+        
+        
+
+ 
+ 
+
+    <!-- Modal -->
+<div class="modal fade" id="AlmirModal" role="dialog">
+    <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Almir Lira</h4>
+        </div>
+        <div class="modal-body">
+          <p>Almir Lira, publicitário e ilustrador, iniciou sua carreira como diretor de arte, trabalhando em agências regionais e nacionais atendendo criativamente clientes como Bradesco, Credicard, MTV, Chevrolet, Itaú e Sadia. Tem reconhecimento com prémios e shortlists no Festival Internacional de Gramado, Londres, Colunistas, Guerreiros da Criação e Profissionais do Ano Rede Globo. Em 2006, após um período fora do país voltou para Alagoas e em 2009 fundou em 2009 a Lira Pub, agência que hoje atende alguns dos principais clientes privados de Alagoas, entre eles Palato, Aby's, Unimed, Convem, Casa das Tintas, MedRadius, Divina Gula, Grupo Carlos Lyra/Açúcar Caeté, Cesmac e grandes marcas do setor da construção civil. Entre as campanhas de destaque está o primeiro grande case de storytelling de Alagoas, a campanha premiada A Gruta Ama Você. A Lira Pub, comandada por Almir segue construindo um modelo inovador e enxuto, focado no valor e força da ideia para a conquista de resultados para seus clientes.</p>
+        </div>
+
+    </div>
+
+    </div>
+</div>
+   
+<div class="modal fade" id="HermannModal" role="dialog">
+    <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Hermann Fernandes</h4>
+        </div>
+        <div class="modal-body">
+          <p>Ex-Presidente da ABAP-AL (Associação Brasileira de agências de propaganda – Capítulo Alagoas). Atuou como diretor de criação por 16 anos. É sócio da Chama Publicidade, agência com 40 anos de mercado.
+        Em 2013, foi agraciado com o troféu Galo de Gramado, pela Associação Latino-Americana de Publicidade, recebendo o título de Publicista Latino-Americano. Recebeu por duas vezes o Prêmio Colunistas Norte e Nordeste de Propaganda, um dos mais importantes do segmento. Foi um dos jurados brasileiros na primeira edição do Festival de Gramado versão Paris, em setembro de 2004. Jurado da versão Gramado em Buenos Aires e Jurado do Festival de Gramado 2005, no Brasil.</p>
+        </div>
+
+    </div>
+
+    </div>
+</div>
+   
+   
+<div class="modal fade" id="VictorModal" role="dialog">
+    <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Victor Brasil</h4>
+        </div>
+        <div class="modal-body">
+          <p>Formado em Publicidade e Propaganda em 2008 pela Esamc/Nassau e atua, desde então, como redator. Possui passagens por agências de Maceió, João Pessoa, Recife e Belo Horizonte, tendo experiência em trabalhar com os mais variados modelos de equipe e clientes.</p>
+        </div>
+
+    </div>
+
+    </div>
+</div>
+   
+<div class="modal fade" id="GusmaoModal" role="dialog">
+    <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Gusmão Victor</h4>
+        </div>
+        <div class="modal-body">
+          <p>Formado em Criação e Produção Publicitária em 2009, atua como Diretor de Arte há dez anos, possuindo também especialização em Tecnologia Web para Negócios. Em 2016 se especializou em criatividade na Brother Escuela de Creativos, da Argentina. Tem passagens pelos mercados de Maceió, Recife e Buenos Aires.</p>
+        </div>
+
+    </div>
+
+    </div>
+</div>
+   
+<div class="modal fade" id="SuarezModal" role="dialog">
+    <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Cristiano Suarez</h4>
+        </div>
+        <div class="modal-body">
+          <p>Cristiano Suarez vive em Maceió e já trabalhou com ilustração para países como Holanda, Portugal, Reino Unido, Dinamarca, Estados Unidos e Eslováquia. Maioria deles relacionados à música e publicidade. Entre os trabalhos memoráveis estão exposição em galerias de Pop Art americanas como a Galerie F, em Chicago e o Chicago Comic &amp; Expo. Trabalhos de direção de arte e ilustração expostos às margens da Rota 66, nos EUA e para a discoteca The Viper Room, na Sunset Strip, em Los Angeles.</p>
+        </div>
+
+    </div>
+
+    </div>
+</div>
+   
+<div class="modal fade" id="MedaModal" role="dialog">
+    <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Igor Meda</h4>
+        </div>
+        <div class="modal-body">
+          <p>Formado em Administração e MBA em Marketing pela Estácio de Sá. Desde 1998 atua nas áreas de atendimento, planejamento, comercial e marketing em empresas dos mais diversos segmentos. 
+
+        Como publicitário Igor já atuou como redator, atendimento, planejamento e mídia em agências como Dogma, Perfil, Hoje e Lira. Igor Mêda é sócio fundador da Tengu Propaganda onde desde 2010 dirige os departamentos de atendimento e mídia. 
+        Possui em seu currículo prêmios nas áreas de propaganda e gestão como Guerreiros da Criação, Festival Gazeta de Publicidade, É Culpa da Mídia, Guia 4 Rodas, Prêmio Sebrae de Qualidade dentre outros. Algumas marcas onde Igor atuou como executivo ou atendeu como agência: Governo do Estado de Alagoas, Detran-AL, Braskem, Unimed, Pajuçara Sistema de Comunicação, Santa Casa de Maceió, CRB, Maikai, Unit dentre outros.</p>
+        </div>
+
+    </div>
+
+    </div>
+</div>
+   
+<div class="modal fade" id="RafaelModal" role="dialog">
+    <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Rafael Quintella</h4>
+        </div>
+        <div class="modal-body">
+          <p>A ROX Brasil é uma empresa de consultoria em branding que nasceu em Alagoas e quer desbravar o país. Com uma equipe multidisciplinar, catequiza e desenvolve o branding para negócios que precisam de muita energia criativa.
+            Aplicando o  EnergyThinking, uma metodologia criativa própria, desenvolve projetos para os mais diversos segmentos do mercado, disseminando a energia das marcas, gerando contato e tornando-as relevantes.</p>
+        </div>
+
+    </div>
+
+    </div>
+</div>
+   
+   <div class="modal fade" id="PauloModal" role="dialog">
+    <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Paulo de Almeida Araujo - Pajoh</h4>
+        </div>
+        <div class="modal-body">
+          <p>Formado em Design Industrial pela UFPB (1983), desde então atua no mercado local e nacional como designer gráfico, designer de produtos e ilustrador.
+            Pós graduado em Design Estratégico (2003) e em História (2002).
+            Professor universitário desde 1991 em diversas instituições de ensino, como UFAL, IFAL, Cesmac, FAA e Facima.
+            Atualmente leciona no Centro Universitário Tiradentes (UNIT) nos cursos de Design de Interiores e Arquitetura e no Centro Universitário Mauricio de Nassau (Uninassau) no curso de Design.
+        </p>
+        </div>
+
+    </div>
+
+    </div>
+</div>
+  
+
+
 
         
         
