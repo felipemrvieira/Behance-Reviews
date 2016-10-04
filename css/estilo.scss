@@ -264,6 +264,7 @@ color: $cor-texto;
     }
     
     .btn-success{
+            font-family: "Helvetica";
             background-color: #8ab71c;
             border-color: #8ab71c;
             font-size: 23px;
@@ -287,6 +288,19 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0a0615', end
 
     img{
         width: 110%;
+        overflow: hidden;
+         opacity: 1;
+        
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        -webkit-transition: .3s ease-in-out;
+        transition: .3s ease-in-out;
+        z-index: 10;
+        
+        &:hover{
+            transform: scale(1.05);
+            //opacity: 0.8;
+        }
     }
     
     #titulo{
@@ -298,6 +312,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0a0615', end
     
     .card{
         padding-bottom: 67px;
+        
     }
     
     .alinha{
@@ -341,6 +356,17 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4b0c11', end
 
     img{
         width: 110%;
+        
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        -webkit-transition: .3s ease-in-out;
+        transition: .3s ease-in-out;
+        z-index: 10;
+        
+        &:hover{
+            transform: scale(1.05);
+            //opacity: 0.8;
+        }
     }
     
     #titulo{
@@ -394,6 +420,19 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4b0c11', end
         img{
             width: 110%;
             padding: 10px;
+            
+        
+            -webkit-transition: .3s ease-out;
+            transition: .3s ease-out;
+            
+            &:hover{
+                width: 110%;
+            padding: 10px;
+                -webkit-filter: grayscale(50%);
+                filter: grayscale(50%);
+                
+            
+            }
         }
     }
     
@@ -412,6 +451,33 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#382171', end
     padding-top: 65px;
     padding-bottom: 75px;
     
+    
+    #estamos{
+        font-size: 60px;
+        font-family: 'Helvetica';
+        color: $branco;
+        
+        img{
+            width: 56px;
+            vertical-align: baseline;
+            padding-right: 10px;
+        }
+    }
+    
+    #jasabe{
+        font-family: 'Helvetica-light';
+        font-size: 36px;
+        color: $amarelo-escuro;
+        padding-left: 56px;
+    }
+    
+    .final{
+        font-family: 'Helvetica-light';
+        font-size: 18px;
+        color: $branco;
+        padding-left: 56px;
+        letter-spacing: 1px;
+    }
     #logo-evento{
         
         img{
