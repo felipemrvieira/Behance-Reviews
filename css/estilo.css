@@ -300,6 +300,21 @@
         -webkit-filter: grayscale(50%);
         filter: grayscale(50%); }
 
+#FormModal .row {
+  padding-bottom: 30px; }
+#FormModal .form-group {
+  padding: 0px 90px 0 90px; }
+#FormModal p {
+  text-align: center;
+  font-family: 'Helvetica';
+  font-size: 19px; }
+#FormModal .btn-preto {
+  font-family: 'Helvetica';
+  background-color: #4a4848;
+  border-color: #4a4848;
+  color: #ffffff;
+  margin-right: 50px; }
+
 #sec-7 {
   background: #382171;
   background: -moz-linear-gradient(45deg, #382171 0%, #b51d2a 86%, #b51d2a 100%);

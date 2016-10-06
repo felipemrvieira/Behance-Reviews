@@ -443,6 +443,30 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4b0c11', end
 
 }
 
+#FormModal{
+    .row{
+        padding-bottom: 30px;
+    }
+    
+    .form-group{
+        padding: 0px 90px 0 90px;
+    }
+    p{
+        text-align: center;
+        font-family: 'Helvetica';
+        font-size: 19px;
+
+    }
+    
+    .btn-preto{
+        font-family: 'Helvetica';
+        background-color: #4a4848;
+        border-color: #4a4848;
+        color: $branco;
+        margin-right: 50px;
+    }
+}
+
 #sec-7{
    background: rgb(56,33,113);
 background: -moz-linear-gradient(45deg,  rgba(56,33,113,1) 0%, rgba(181,29,42,1) 86%, rgba(181,29,42,1) 100%);
