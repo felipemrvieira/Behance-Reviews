@@ -47,6 +47,10 @@ $rosa: #c21c5e;
     height: 7px;
     padding: 0;
     margin: 0;
+    
+    @media screen and (max-device-width: 850px) {
+        display: none;
+    }
 }
 
 .linha-rosa{
@@ -74,7 +78,7 @@ color: $cor-texto;
     #left{
         padding-top: 35px;
         
-        @media (min-width: 701px) and (max-width: 1500px){
+        @media screen and (min-device-width: 701px) and (max-width: 1500px){
             #facebook{
                 width: 92px;
                 margin-right: 23px;
@@ -86,9 +90,13 @@ color: $cor-texto;
             #quem-pode{
                 font-size: 23px;
             }
+            
+            .prof{
+                font-size: 17px;
+            }
         }
         
-        @media (max-width: 700px) {
+        @media screen and (max-device-width: 700px) {
             #facebook{
                 width: 200px;
             }
@@ -97,13 +105,26 @@ color: $cor-texto;
             }
             
             #quem-pode{
-                font-size: 30px;
+                font-size: 34px;
+                line-height: 40px;
+                padding-bottom: 5px;
+            }
+            
+            .prof{
+                font-size: 15px;
             }
         }
         
         #logo-evento{
             margin-top: 20px;
             margin-bottom: 30px;
+            
+            @media screen and (max-device-width: 700px) {
+                img{
+                    width: 100%;
+                }
+                
+            }
         }
         
         .traco{
@@ -116,11 +137,6 @@ color: $cor-texto;
             font-size: 48px;
         }
         
-        
-        
-        .prof{
-            font-size: 17px;
-        }
         
         .portfolio{
             line-height: 90px;
@@ -139,6 +155,11 @@ color: $cor-texto;
     
     #marca{
         width: 100%;
+    }
+    
+    #sombra{
+        overflow: hidden;
+        max-width: 100%;
     }
     
     .floating{
@@ -221,6 +242,7 @@ color: $cor-texto;
     background:url(../img/Behance2.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     padding-bottom: 140px;
     
     font-family: 'Helvetica';
@@ -240,6 +262,7 @@ color: $cor-texto;
         
         .pad-contudo-sec-2{
             padding-right: 40px;
+            padding-bottom: 30px;
         }
         
         .titulo-contudo-sec-2{
@@ -295,6 +318,9 @@ color: $cor-texto;
 }
 
 #sec-4{
+    @media screen and (max-device-width: 850px) {
+        display: none;
+    }
     
     background: rgb(10,6,21);
 background: -moz-linear-gradient(45deg,  rgba(10,6,21,1) 0%, rgba(34,5,8,1) 100%);
@@ -363,6 +389,11 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0a0615', end
 }
 
 #sec-5{
+    @media screen and (max-device-width: 850px) {
+        display: none;
+    }
+    
+    
     background: rgb(75,12,17);
 background: -moz-linear-gradient(45deg,  rgba(75,12,17,1) 0%, rgba(71,12,21,1) 22%, rgba(21,14,47,1) 100%);
 background: -webkit-linear-gradient(45deg,  rgba(75,12,17,1) 0%,rgba(71,12,21,1) 22%,rgba(21,14,47,1) 100%);
@@ -435,6 +466,13 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4b0c11', end
     .row{
         margin: 0;
         padding: 0;
+        
+        @media screen and (max-device-width: 850px) {
+            display: block;
+            margin-right: auto;
+            margin-left: auto;
+            width: 80%;
+        }
         
         img{
             width: 100%;

@@ -30,6 +30,9 @@
   height: 7px;
   padding: 0;
   margin: 0; }
+  @media screen and (max-device-width: 850px) {
+    .linha {
+      display: none; } }
 
 .linha-rosa {
   background-color: #c21c5e;
@@ -51,32 +54,39 @@
     width: 180px; }
   #sec-1 #left {
     padding-top: 35px; }
-    @media (min-width: 701px) and (max-width: 1500px) {
+    @media screen and (min-device-width: 701px) and (max-width: 1500px) {
       #sec-1 #left #facebook {
         width: 92px;
         margin-right: 23px; }
       #sec-1 #left #behance {
         width: 131px; }
       #sec-1 #left #quem-pode {
-        font-size: 23px; } }
-    @media (max-width: 700px) {
+        font-size: 23px; }
+      #sec-1 #left .prof {
+        font-size: 17px; } }
+    @media screen and (max-device-width: 700px) {
       #sec-1 #left #facebook {
         width: 200px; }
       #sec-1 #left #behance {
         width: 250px; }
       #sec-1 #left #quem-pode {
-        font-size: 30px; } }
+        font-size: 34px;
+        line-height: 40px;
+        padding-bottom: 5px; }
+      #sec-1 #left .prof {
+        font-size: 15px; } }
     #sec-1 #left #logo-evento {
       margin-top: 20px;
       margin-bottom: 30px; }
+      @media screen and (max-device-width: 700px) {
+        #sec-1 #left #logo-evento img {
+          width: 100%; } }
     #sec-1 #left .traco {
       font-family: arial;
       font-size: 80px;
       line-height: 50px; }
     #sec-1 #left #maceio {
       font-size: 48px; }
-    #sec-1 #left .prof {
-      font-size: 17px; }
     #sec-1 #left .portfolio {
       line-height: 90px;
       font-size: 75px; }
@@ -89,6 +99,9 @@
       margin: 20px 0 20px 0; }
   #sec-1 #marca {
     width: 100%; }
+  #sec-1 #sombra {
+    overflow: hidden;
+    max-width: 100%; }
   #sec-1 .floating {
     float: left;
     -webkit-animation-name: Floatingx;
@@ -156,6 +169,7 @@
   background: url(../img/Behance2.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   padding-bottom: 140px;
   font-family: 'Helvetica';
   color: #ffed00; }
@@ -167,7 +181,8 @@
   #sec-2 #contudo-sec-2 {
     padding-top: 70px; }
     #sec-2 #contudo-sec-2 .pad-contudo-sec-2 {
-      padding-right: 40px; }
+      padding-right: 40px;
+      padding-bottom: 30px; }
     #sec-2 #contudo-sec-2 .titulo-contudo-sec-2 {
       font-size: 36px;
       line-height: 40px;
@@ -212,6 +227,9 @@
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0a0615', endColorstr='#220508',GradientType=1 );
   padding-top: 132px;
   padding-bottom: 20px; }
+  @media screen and (max-device-width: 850px) {
+    #sec-4 {
+      display: none; } }
   #sec-4 img {
     width: 110%;
     overflow: hidden;
@@ -255,6 +273,9 @@
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4b0c11', endColorstr='#150e2f',GradientType=1 );
   padding-top: 132px;
   padding-bottom: 20px; }
+  @media screen and (max-device-width: 850px) {
+    #sec-5 {
+      display: none; } }
   #sec-5 img {
     width: 110%;
     -webkit-transform: scale(1);
@@ -295,6 +316,12 @@
   #sec-6 .row {
     margin: 0;
     padding: 0; }
+    @media screen and (max-device-width: 850px) {
+      #sec-6 .row {
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+        width: 80%; } }
     #sec-6 .row img {
       width: 100%;
       padding: 10px;
