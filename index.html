@@ -51,11 +51,16 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <title>Behance Reviews</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <meta name="theme-color" content="#342172">
 
+    <title>Behance Reviews</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/parallax.min.js"></script>
+
+
+    <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/estilo.css">
 
     <script>
@@ -89,10 +94,10 @@
                     <div class="row prof">Design | Arquitetura | Fotografia | Publicidade | Decoração</div>
                     <div class="row prof">Tecnologia | Ilustração | Animação | Marketing | Game | Moda</div>
                     <div class="row">
-                        <a href="#sec-3"  target="_blank" type="button" class="btn btn-lg btn-success">INSCREVA-SE</a>
+                        <a href="#sec-3"  target="_blank" type="button" class="btn btn-lg btn-success button-vr fill">INSCREVA-SE</a>
                     </div>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-6 animated bounceIn">
                     <img id="marca" class="floating" src="img/marca.png" alt="">
                     <div class="row"><img id="sombra" class="scaling center-block" src="img/sombra.png" alt=""></div>
                 </div>
@@ -108,7 +113,7 @@
             </div>
         </div>
 <!--  ---- area 2 ----  -->
-        <div id="sec-2" class="pad">
+        <div id="sec-2" class="pad parallax-window" data-parallax="scroll" data-image-src="img/Behance2.jpg">
             <div id="header-sec-2">
                 <div class="row light">O que acontece</div>
                 <div class="row light">no evento</div>
@@ -157,7 +162,7 @@
                     <div class="row titulo-2 bold">130 VAGAS</div>
                     <div class="row legenda light">ASSISTIR O EVENTO</div>
                     <div class="row">
-                        <a href="https://www.eventick.com.br/behance-reviews-maceio"  target="_blank" type="button" class="btn btn-lg btn-success">INSCREVA-SE</a>
+                        <a href="https://www.eventick.com.br/behance-reviews-maceio"  target="_blank" type="button" class="btn btn-lg btn-success button-vr fill">INSCREVA-SE</a>
                     </div>
                 </div>
                 <div class="col-md-2"></div>
@@ -166,7 +171,7 @@
                     <div class="row titulo-2 bold">20 VAGAS</div>
                     <div class="row legenda light">AVALIAÇÃO DE PORTFOLIO</div>
                     <div class="row">
-                        <a href="#" data-toggle="modal" data-target="#FormModal" target="_blank" type="button" class="btn btn-lg btn-success">INSCREVA-SE</a>
+                        <a href="#" data-toggle="modal" data-target="#FormModal" target="_blank" type="button" class="btn btn-lg btn-success button-vr fill">INSCREVA-SE</a>
                     </div>
                 </div>
 
@@ -177,7 +182,7 @@
             <div id="titulo" class="row bold">// PALESTRANTES</div>
             <div class="row">
                 <div class="col-md-4 card">
-                    <div class="col-md-8"><a data-toggle="modal" data-target="#GusmaoModal"><img src="img/pa-gusmao.png" alt=""></a></div>
+                    <div class="col-md-8"><a data-toggle="modal" data-target="#GusmaoModal"><img src="img/pa-gusmao.png" alt="" class="animated avatar"></a></div>
                     <div class="col-md-4 branco alinha">
                         <div class="row sobrenome bold">GUSMÃO</div>
                         <div class="row nome">VICTOR</div>
@@ -189,7 +194,7 @@
                     </div>
                 </div>
                <div class="col-md-4 card">
-                   <div class="col-md-8"><a data-toggle="modal" data-target="#ArnaldoModal"><img src="img/pa-arnaldo.png" alt=""></a></div>
+                   <div class="col-md-8"><a data-toggle="modal" data-target="#ArnaldoModal"><img src="img/pa-arnaldo.png" alt="" class="animated avatar"></a></div>
                     <div class="col-md-4 branco alinha">
                         <div class="row sobrenome bold">ARNALDO</div>
                         <div class="row nome">MEDEIROS</div>
@@ -201,7 +206,7 @@
                     </div>
                 </div>
                <div class="col-md-4 card">
-                   <div class="col-md-8"><a data-toggle="modal" data-target="#VictorModal"><img src="img/pa-brasil.png" alt=""></a></div>
+                   <div class="col-md-8"><a data-toggle="modal" data-target="#VictorModal"><img src="img/pa-brasil.png" alt="" class="animated avatar"></a></div>
                     <div class="col-md-4 branco alinha">
                         <div class="row sobrenome bold">VICTOR</div>
                         <div class="row nome">BRASIL</div>
@@ -213,7 +218,7 @@
                     </div>
                 </div>
                <div class="col-md-4 card">
-                   <div class="col-md-8"><a data-toggle="modal" data-target="#MedaModal"><img src="img/pa-meda.png" alt=""></a></div>
+                   <div class="col-md-8"><a data-toggle="modal" data-target="#MedaModal"><img src="img/pa-meda.png" alt="" class="animated avatar"></a></div>
                     <div class="col-md-4 branco alinha">
                         <div class="row sobrenome bold">IGOR</div>
                         <div class="row nome">MÊDA</div>
@@ -225,7 +230,7 @@
                     </div>
                 </div>
                <div class="col-md-4 card">
-                   <div class="col-md-8"><a data-toggle="modal" data-target="#GugaModal"><img src="img/pa-guga.png" alt=""></a></div>
+                   <div class="col-md-8"><a data-toggle="modal" data-target="#GugaModal"><img src="img/pa-guga.png" alt="" class="animated avatar"></a></div>
                     <div class="col-md-4 branco alinha">
                         <div class="row sobrenome bold">GUGA</div>
                         <div class="row nome">BARALDI</div>
@@ -259,7 +264,7 @@
             <div id="titulo" class="row bold">// AVALIADORES</div>
             <div class="row">
                 <div class="col-md-4 card">
-                    <div class="col-md-8"><a data-toggle="modal" data-target="#RafaelModal"><img src="img/av-rafael.png" alt=""></a></div>
+                    <div class="col-md-8"><a data-toggle="modal" data-target="#RafaelModal"><img src="img/av-rafael.png" alt="" class="animated avatar"></a></div>
                     <div class="col-md-4 branco alinha">
                         <div class="row sobrenome bold">RAFAEL</div>
                         <div class="row nome">QUINTELLA</div>
@@ -271,7 +276,7 @@
                     </div>
                 </div>
                <div class="col-md-4 card">
-                   <div class="col-md-8"><a data-toggle="modal" data-target="#SuarezModal"><img src="img/av-cristiano.png" alt=""></a></div>
+                   <div class="col-md-8"><a data-toggle="modal" data-target="#SuarezModal"><img src="img/av-cristiano.png" alt="" class="animated avatar"></a></div>
                     <div class="col-md-4 branco alinha">
                         <div class="row sobrenome bold">CRISTIANO</div>
                         <div class="row nome">SUAREZ</div>
@@ -283,7 +288,7 @@
                     </div>
                 </div>
                <div class="col-md-4 card">
-                   <div class="col-md-8"> <a data-toggle="modal" data-target="#AlmirModal"><img src="img/av-almir.png" alt=""></a></div>
+                   <div class="col-md-8"> <a data-toggle="modal" data-target="#AlmirModal"><img src="img/av-almir.png" alt="" class="animated avatar"></a></div>
                     <div class="col-md-4 branco alinha">
                         <div class="row sobrenome bold">ALMIR</div>
                         <div class="row nome">LIRA</div>
@@ -296,7 +301,7 @@
                 </div>
                 <div class="row"></div>
                <div class="col-md-4 card">
-                   <div class="col-md-8"><a data-toggle="modal" data-target="#HermannModal"><img src="img/av-hernann.png" alt=""></a></div>
+                   <div class="col-md-8"><a data-toggle="modal" data-target="#HermannModal"><img src="img/av-hernann.png" alt="" class="animated avatar"></a></div>
                     <div class="col-md-4 branco alinha">
                         <div class="row sobrenome bold">HERMANN</div>
                         <div class="row nome">FERNANDES</div>
@@ -308,7 +313,7 @@
                     </div>
                 </div>
                <div class="col-md-4 card">
-                   <div class="col-md-8"><a data-toggle="modal" data-target="#PauloModal"><img src="img/av-paulo.png" alt=""></a></div>
+                   <div class="col-md-8"><a data-toggle="modal" data-target="#PauloModal"><img src="img/av-paulo.png" alt="" class="animated avatar"></a></div>
                     <div class="col-md-4 branco alinha">
                         <div class="row sobrenome bold">PAULO</div>
                         <div class="row nome">ARAUJO</div>
@@ -320,7 +325,7 @@
                     </div>
                 </div>
                <div class="col-md-4 card">
-                   <div class="col-md-8"><a data-toggle="modal" data-target="#ArnaldoModal"><img src="img/av-arnaldo.png" alt=""></a></div>
+                   <div class="col-md-8"><a data-toggle="modal" data-target="#ArnaldoModal"><img src="img/av-arnaldo.png" class="animated avatar" alt=""></a></div>
                     <div class="col-md-4 branco alinha">
                         <div class="row sobrenome bold">ARNALDO</div>
                         <div class="row nome">MEDEIROS</div>
@@ -634,6 +639,16 @@
 
 
     </div>
+    <script>
+    $(function() {
+      $(".avatar").mouseenter(function(){
+          $(this).addClass("bounceIn");
+      });
+      $(".avatar").mouseleave(function(){
+          $(this).removeClass("bounceIn");
+      });
+    })
+    </script>
 
     <script>
         function myMap() {
